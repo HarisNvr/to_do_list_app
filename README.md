@@ -64,6 +64,7 @@
    1. Выставьте флаг DEBUG на True - для работы в режиме отладки
    2. Выставьте флаг ENABLE_POSTGRES_DB на False для подключения базы SQLite
    3. ```bash
+      cd to_do_list/
       python3 manage.py migrate # Применить миграции
       python3 manage.py createsuperuser # Создать супер-пользователя
       python3 manage.py runserver # Запустить сервер
