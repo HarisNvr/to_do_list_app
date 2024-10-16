@@ -15,5 +15,9 @@ class ToDo(models.Model):
         related_name='todos'
     )
 
+    class Meta:
+        verbose_name = 'задача'
+        verbose_name_plural = 'Задачи'
+
     def __str__(self):
         return self.title
