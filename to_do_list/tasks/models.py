@@ -1,7 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-from to_do_list.tasks.constants import TITLE_LENGTH
+from tasks.constants import TITLE_LENGTH
 
 
 class ToDo(models.Model):
