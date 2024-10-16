@@ -56,13 +56,13 @@ class ToDoViewSet(viewsets.ModelViewSet):
             instance = ToDo.objects.get(pk=kwargs['pk'])
         except ToDo.DoesNotExist:
             return Response(
-                {'detail': 'Task not found'},
+                {'detail': 'Задача не найдена'},
                 status=status.HTTP_404_NOT_FOUND
             )
 
         if instance.user != request.user:
             return Response(
-                {'detail': "You can't view other people's tasks"},
+                {'detail': 'Вы не можете просматривать чужие задачи'},
                 status=status.HTTP_403_FORBIDDEN
             )
 
