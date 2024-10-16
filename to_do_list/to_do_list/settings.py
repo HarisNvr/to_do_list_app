@@ -1,5 +1,5 @@
 from datetime import timedelta
-from os import getenv, path
+from os import getenv
 from pathlib import Path
 
 from django.core.management.utils import get_random_secret_key
