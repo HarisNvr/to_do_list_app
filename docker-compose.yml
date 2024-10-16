@@ -10,7 +10,7 @@ services:
     env_file: .env
 
   backend:
-    build: .
+    build: ./to_do_list/
     volumes:
       - static:/backend_static
     env_file: .env
